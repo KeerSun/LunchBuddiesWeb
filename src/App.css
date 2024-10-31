@@ -36,3 +36,205 @@
     transform: rotate(360deg);
   }
 }
+
+.gradient-bg {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+}
+
+.person-card {
+  transition: all 0.3s ease;
+}
+
+.person-card:hover {
+  transform: translateY(-5px);
+}
+
+.group-card {
+  border: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.name-badge {
+  flex: 1;
+  min-width: 0;
+  padding-right: 1rem;
+}
+
+.name-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.form-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.header-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+}
+
+
+
+.input-group-hover:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.name-badge {
+  flex: 1;
+  min-width: 0;
+  padding-right: 0.5rem;
+}
+
+.name-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.form-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.header-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+}
+
+.form-section {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.form-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  border-radius: 3px 3px 0 0;
+}
+
+.input-group-hover:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.person-card {
+  height: 100%;
+}
+
+.person-card .card-body {
+  padding: 0.75rem;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.8rem;
+}
+
+.delete-btn {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.person-card:hover .delete-btn {
+  opacity: 1;
+}
+
+.people-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.person-card {
+  flex: 1 1 200px;
+  max-width: calc(25% - 1rem);
+  min-width: 200px;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  flex-shrink: 0;
+}
+
+.name-badge {
+  flex: 1;
+  min-width: 0;
+  margin-right: 0.5rem;
+}
+
+.name-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.delete-btn {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.person-card:hover .delete-btn {
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .person-card {
+    max-width: calc(33.333% - 1rem);
+  }
+}
+
+@media (max-width: 992px) {
+  .person-card {
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .person-card {
+    max-width: 100%;
+  }
+}
